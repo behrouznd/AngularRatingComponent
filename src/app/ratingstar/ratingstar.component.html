@@ -1,0 +1,11 @@
+
+<div class="p-1 display-table">
+<h3>
+  <span *ngFor="let item of starsRating; let  i = index" class="mr-1">
+    <i [ngClass]="currentRate > i ? 'bi-star-fill yellow' : 'bi-star ' + (mouseOverIndex > i ? 'yellow' : 'gray') "
+      class="bi "
+     (mouseenter)="mouseEnter(i)" (mouseleave)="mouseLeave()" (click)="click(i)" ></i>
+  </span>
+</h3>
+<h4 style="text-align: center;">{{currentRate}}/{{starsRating.length}}</h4>
+</div>

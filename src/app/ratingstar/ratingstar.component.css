@@ -1,0 +1,13 @@
+h3,h4{display: table-row;}
+.yellow{
+  color:rgb(255, 187, 0);
+}
+.gray{
+  color: gray;
+}
+.display-table{
+  display: table;
+}
+i:hover{cursor: pointer;}
+
+
